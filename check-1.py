@@ -1,12 +1,3 @@
-import torch
-from torch.serialization import add_safe_globals
-from ultralytics.nn.tasks import DetectionModel
-
-
-add_safe_globals([DetectionModel])
-
-
-
 from ultralytics import YOLO
 import cv2
 import numpy as np
@@ -130,6 +121,7 @@ while cap.isOpened():
 
 cap.release()
 cv2.destroyAllWindows()
+
 
 
 
